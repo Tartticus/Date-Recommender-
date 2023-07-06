@@ -168,7 +168,7 @@ print(classification_report)
 
 #%% API 
 # Replace 'YOUR_API_KEY' with your actual API key
-api_key ='AIzaSyB6HqyD1tYpWOjwswMN95hC_qvSdrgJVJU'
+api_key ='YOUR API KEY GOES HERE'
 gmaps = googlemaps.Client(key=api_key)
 
 #user input for cities
