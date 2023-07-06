@@ -29,7 +29,7 @@ print("imports complete")
 hitlist = mysql.connector.connect(
   host="localhost", auth_plugin='mysql_native_password',
   user="Mtartt",
-  password="Mailman32!",
+  password="******",
   database = "places"
 )
 print("Connected to Database")
