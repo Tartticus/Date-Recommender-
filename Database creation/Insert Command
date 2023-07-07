@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun 13 00:55:31 2023
+
+@author: Matth
+"""
+import mysql
+import mysql.connector
+import pandas as pd
+
+hitlist = mysql.connector.connect(
+  host="localhost", auth_plugin='mysql_native_password',
+  user="Mtartt",
+  password="*******",
+  database = "places"
+)
+Print ("Connected to Database")
+mycursor = hitlist.cursor()
+
+mycursor.execute("CREATE DATABASE places")
+
+mycursor.execute("SHOW DATABASES")
+for x in mycursor:
+  print(x)
+  
+mycursor.execute("CREATE TABLE dates (name VARCHAR(255), address VARCHAR(255), type VARCHAR(255), description LONGTEXT, Rating INT)")
+
+
+data_frame = pd.read_csv(r"C:\Users\Matth\OneDrive\Documents\Projects\places project\places.csv")
+print("Dataframe Created")
+data_frame.head
+
+#%%
+## inset Query
+Insert_Query = "INSERT INTO dates(name, address, type, description, Rating,id) VALUES (%s, %s, %s, %s, %s, %s)"
+Insert_Query = "INSERT INTO places.dates VALUES (%s, %s, %s, %s, %s, %s)"
+records  = data_frame.values.tolist() 
+print(records)
+
+for i, row in data_frame.iterrows():
+    mycursor.execute(Insert_Query, tuple(row))
+    print("Record Inserted")
