@@ -348,3 +348,38 @@ df = pd.DataFrame(restaurant_list)
 
 # Print the DataFrame
 print(df)
+
+#%% Restaurant selection and upload
+# Prompt the user to pick a restaurant from the DataFrame
+print("Please choose a restaurant from the following options:")
+for i, restaurant in enumerate(df['name'], 1):
+    print(f"{i}. {restaurant}")
+
+while True:
+    # Prompt the user for input
+    choice = input("Enter the number corresponding to your choice: ")
+
+    try:
+        # Validate the user's input
+        choice_index = int(choice) - 1
+
+        if choice_index < 0 or choice_index >= len(df['name']):
+            print("Invalid choice. Please try again.")
+        else:
+            selected_restaurant = df['name'][choice_index]
+            print(f"You selected: {selected_restaurant}")
+            break
+    except ValueError:
+        print("Invalid choice. Please enter a number.")
+
+# Get the current date and time
+current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+# Prepare the INSERT statement
+insert_query = "INSERT INTO selected_restaurants (name, selected_datetime) VALUES (%s, %s)"
+
+# Execute the INSERT statement with the selected restaurant and datetime values
+mycursor.execute(insert_query, (selected_restaurant, current_datetime))
+hitlist.commit()
+
+print("Selected restaurant inserted into the database.")
