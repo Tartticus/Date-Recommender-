@@ -44,11 +44,11 @@ python date_recommender.py
 ## Configuration
 Update the config.py file with the necessary configuration details:
 
-DB_HOST: The host address of your MySQL database.
-DB_USERNAME: The username to connect to the MySQL database.
-DB_PASSWORD: The password for the MySQL database.
-DB_DATABASE: The name of the MySQL database.
-GOOGLE_MAPS_API_KEY: Your Google Maps API Key.
+- DB_HOST: The host address of your MySQL database.
+- DB_USERNAME: The username to connect to the MySQL database.
+- DB_PASSWORD: The password for the MySQL database.
+- DB_DATABASE: The name of the MySQL database.
+- GOOGLE_MAPS_API_KEY: Your Google Maps API Key.
 
 ## Troubleshooting
 If you encounter any issues while using the Date-Recommender, consider the following troubleshooting steps:
@@ -60,4 +60,4 @@ If you encounter any issues while using the Date-Recommender, consider the follo
 - If the issue persists, feel free to reach out to the developer for assistance.
 
 ## Contributing
-Contributions to the Date-Recommender project are welcome! If you have any ideas, bug reports, or feature requests, please submit them through the GitHub repository's issue tracker.
+Contributions to the Date-Recommender project are welcome!
