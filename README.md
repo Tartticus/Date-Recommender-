@@ -53,11 +53,11 @@ GOOGLE_MAPS_API_KEY: Your Google Maps API Key.
 ## Troubleshooting
 If you encounter any issues while using the Date-Recommender, consider the following troubleshooting steps:
 
-Ensure that your MySQL database is properly set up and running.
-Verify that the database connection details in the config.py file are correct.
-Double-check the installation of the required dependencies and packages.
-Make sure you have a valid and active Google Maps API Key.
-If the issue persists, feel free to reach out to the developer for assistance.
+- Ensure that your MySQL database is properly set up and running.
+- Verify that the database connection details in the config.py file are correct.
+- Double-check the installation of the required dependencies and packages.
+- Make sure you have a valid and active Google Maps API Key.
+- If the issue persists, feel free to reach out to the developer for assistance.
 
 ## Contributing
 Contributions to the Date-Recommender project are welcome! If you have any ideas, bug reports, or feature requests, please submit them through the GitHub repository's issue tracker.
