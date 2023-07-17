@@ -42,7 +42,7 @@ python date_recommender.py
 6. Enjoy your date at the recommended location!
 
 ## Configuration
-Update the config.py file with the necessary configuration details:
+Update the database section with the necessary configuration details:
 
 - DB_HOST: The host address of your MySQL database.
 - DB_USERNAME: The username to connect to the MySQL database.
@@ -54,7 +54,7 @@ Update the config.py file with the necessary configuration details:
 If you encounter any issues while using the Date-Recommender, consider the following troubleshooting steps:
 
 - Ensure that your MySQL database is properly set up and running.
-- Verify that the database connection details in the config.py file are correct.
+- Verify that the database connection details in the database section are correct.
 - Double-check the installation of the required dependencies and packages.
 - Make sure you have a valid and active Google Maps API Key.
 - If the issue persists, feel free to reach out to the developer for assistance.
