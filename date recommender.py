@@ -1,3 +1,4 @@
+'''
 # -*- coding: utf-8 -*-
 """
 Created on Tue Jun 13 19:47:41 2023
@@ -23,7 +24,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
 print("imports complete")
-
+'''
 
 #%% Cursor connect
 hitlist = mysql.connector.connect(
