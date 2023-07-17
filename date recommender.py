@@ -37,7 +37,7 @@ hitlist = mysql.connector.connect(
 )
 print("Connected to Database")
 mycursor = hitlist.cursor()
-```
+
 
 #%% Select
 options = ['Dining','Dessert','Japanese','Ramen','Taiwanese','Bar','Italian']
