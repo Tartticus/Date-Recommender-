@@ -24,7 +24,7 @@ for x in mycursor:
   print(x)
   
 mycursor.execute("CREATE TABLE dates (name VARCHAR(255), address VARCHAR(255), type VARCHAR(255), description LONGTEXT, Rating INT)")
-
+mycursor.execute("CREATE TABLE selected_places (name VARCHAR(255), address VARCHAR(255), type VARCHAR(255), description LONGTEXT, Rating INT)")
 
 data_frame = pd.read_csv(r"C:\Users\Matth\OneDrive\Documents\Projects\places project\places.csv")
 print("Dataframe Created")
