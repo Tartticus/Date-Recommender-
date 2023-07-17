@@ -6,6 +6,7 @@ Created on Tue Jun 13 19:47:41 2023
 
 @author: Matth
 """
+# Imports
 import json
 import numpy as np
 import requests
