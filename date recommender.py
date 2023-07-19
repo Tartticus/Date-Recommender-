@@ -287,7 +287,6 @@ with open(output_file, 'w') as json_file:
 print(f"Data saved to {output_file}")
 
 #%% Json processing (first checks for high score - then medium)
-# Assuming you have already trained and saved the model
 model = naive_bayes
 
 # Load the JSON data
