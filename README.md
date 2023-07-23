@@ -59,8 +59,10 @@ If you encounter any issues while using the Date-Recommender, consider the follo
 - Make sure you have a valid and active Google Maps API Key.
 - If the issue persists, feel free to reach out to the developer for assistance.
 
-## Contributing
-Contributions to the Date-Recommender project are welcome!
 
 ## PowerBI Dashboard I created to visualize KPIs.
 ![image (1)](https://github.com/Tartticus/Date-Recommender-/assets/87999009/68094090-4d48-4048-be7d-a75ee17a873d)
+
+
+## Contributing
+Contributions to the Date-Recommender project are welcome!
