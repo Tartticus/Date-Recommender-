@@ -61,3 +61,6 @@ If you encounter any issues while using the Date-Recommender, consider the follo
 
 ## Contributing
 Contributions to the Date-Recommender project are welcome!
+
+## PowerBI Dashboard I created to visualize KPIs.
+![image (1)](https://github.com/Tartticus/Date-Recommender-/assets/87999009/68094090-4d48-4048-be7d-a75ee17a873d)
