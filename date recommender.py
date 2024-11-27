@@ -1,11 +1,3 @@
-
-# -*- coding: utf-8 -*-
-
-"""
-Created on Tue Jun 13 19:47:41 2023
-
-@author: Matth
-"""
 import json
 import numpy as np
 import requests
@@ -16,8 +8,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import string
 from nltk.stem import WordNetLemmatizer, PorterStemmer
-import mysql
-import mysql.connector
+import duckdb
 import pandas as pd
 import time
 from sklearn.model_selection import train_test_split
