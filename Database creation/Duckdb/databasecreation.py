@@ -1,5 +1,6 @@
-import duckdb
 
+import duckdb
+from datetime import datetime
 # Connect to an in-memory DuckDB database
 con = duckdb.connect(database='dining')
 
@@ -16,13 +17,28 @@ CREATE TABLE users (
 
 
 con.execute("""
-            CREATE TABLE Restaurants (
-    RestaurantID SERIAL PRIMARY KEY, -- Unique identifier for each record
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for record creation
-    username VARCHAR (50),
-    PlaceID VARCHAR(50) UNIQUE NOT NULL, -- Place ID from the API
-    Resturaant_Name VARCHAR(100) NOT NULL, -- Name of the restaurant
-    City VARCHAR(100), -- City name for filtering
-    URL TEXT, -- Website URL
-    Rating FLOAT, -- Average rating    
+            Create TABLE Restaurants (
+            
+    RestaurantID INT PRIMARY KEY,
+    CreatedAt Date, 
+    Username VARCHAR(50),
+    Resturaant_Name VARCHAR(100) NOT NULL, 
+    City VARCHAR(100), 
+    Type TEXT,
+    Description TEXT,
+    UserRating FLOAT 
 );""")
+
+
+
+exclude_df['CreatedAt'] = exclude_df['CreatedAt'].apply(lambda x: datetime.strptime(x, "%m/%d/%Y").strftime("%Y-%m-%d"))
+
+
+con.execute("Insert into Restaurants SELECT * FROM exclude_df")
+            
+            
+
+            
+            
+            
+            
